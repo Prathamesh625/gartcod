@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+
+
+
+h1 {
+
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  animation: changecolor 5s infinite;
+  margin-left: 30%;
+  margin-right: 30%
+}
+
+
+/* Mountain */
+.changecolor {
+  animation-name: changecolor;
+}
+
+
+
+
+
+.container {
+
+
+  animation: backgroundcolor 5s infinite;
+  text-align: center;
+
+  height: 100vh;
+  ;
+}
+
+
+@keyframes button {
+  from {
+    top: 10%
+  }
+
+  to {
+    top: 35%
+  }
+}
+
+
+
+@keyframes backgroundcolor {
+  from {
+    color: #a3a3a3;
+    /* background-image: radial-gradient(farthest-corner at 50% 10%, rgba(80, 78, 78, 0.1) 0%, rgba(228, 197, 197, 0.1), black 60%);; */
+    background: radial-gradient(circle at 50% 10%, rgba(246, 244, 246, 0.52) -100%, black 60%)
+  }
+
+  50% {
+    color: rgb(243, 186, 16);
+    /* background-image: radial-gradient(farthest-corner at 50% 10%, rgba(111, 80, 9, 0.1) 0%, rgba(137, 118, 23, 0.1) ,black 60%);
+   */
+
+    background: radial-gradient(circle at 50% 10%, rgba(244, 220, 6, 0.52) -100%, black 60%)
+  }
+
+  to {
+    color: rgba(252, 165, 165, 255);
+    /* background: radial-gradient(farthest-corner at 50% 10%, rgba(231, 42, 231, 0.1) 0%, black 30%); */
+    /* background-image: radial-gradient(farthest-corner at 50% 10%, rgba(234, 48, 197,0.01), rgba(234, 
+            48,
+            197,
+            0.1), black 60%); */
+    background: radial-gradient(circle at 50% 10%, rgba(227, 7, 227, 0.52) -100%, black 60%)
+  }
+}
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+
+  background-image: url("https://gartcod.cloud/_next/static/media/designer.cf165e6f.svg");
+  position: relative;
+  border-radius: 50%;
+  animation: circle 2s ;
+  animation-fill-mode: forwards;
+
+  /* animation-iteration-count: 3; */
+
+  z-index: 2;
+}
+
+
+
+
+/* Mountain */
+.mountain {
+  animation-name: mountain;
+}
+
+@keyframes mountain {
+  from {
+    transform: translateX(0) translateY(0);
+
+  }
+
+  25% {
+
+    transform: translateX(50vw) translateY(70vh);
+
+
+  }
+
+
+  50% {
+
+    transform: translateX(50vw) translateY(80vh);
+
+
+  }
+
+
+
+  to {
+    transform: translateX(90vw) translateY(0);
+
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+
+}
+
+
+
+
+button {
+  position: relative;
+
+  top: 20%;
+  left: 1%;
+  width: 80px;
+  height: 50px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+
+  animation: button 1s ease-in-out;
+  animation-fill-mode: forwards;
+
+
+
+}
+
+
+.container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 2px), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 2px, transparent 1px);
+  background-size: 40px 40px;
+  /* Adjust the size of the squares */
+  z-index: -1;
+  /* Move the background behind other elements */
+  pointer-events: none;
+  /* Allow clicks to go through the background */
+
+}
+
+
+.content {
+
+  margin-left: 30%;
+  margin-right: 30%;
+  display: flex;
+}
+
+
+
+
+
+.subtitle {
+
+  top: 50px;
+  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+
+
+
+
+
+.logo {
+  position: relative;
+  top: 20px;
+}
+
+
+.subtitle .logo-2 {
+  position: relative;
+  top: 20px;
+}
+
+
+.time {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
